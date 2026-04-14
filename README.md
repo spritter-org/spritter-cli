@@ -13,6 +13,8 @@ pip install -e spritter-cli
 
 ## Usage
 
+> Get supported providers and station IDs can be found in the [spritter library repository](https://github.com/spritter-org/spritter/?tab=readme-ov-file#providers)
+
 ```bash
 spritter --provider JET --id 2640f98f48
 ```
