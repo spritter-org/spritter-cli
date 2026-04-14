@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spritter-cli"
+version = "0.1.0"
+description = "Spritter CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "spritter" }]
+dependencies = [
+  "spritter @ git+https://github.com/spritter-org/spritter.git",
+]
+
+[project.scripts]
+spritter = "cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
